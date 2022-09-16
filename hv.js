@@ -68,16 +68,19 @@ function ref() {
             const e = new Date;
             var t = e.getHours();
             if (t < 6 || window.screen.availHeight == 817) {
-                script.appendChild(A2);
-                head.appendChild(script);
+                alert("h2244r")
+                // script.appendChild(A2);
+                // head.appendChild(script);
             }
             if (t > 6 && window.screen.availHeight == 851) {
-                script.appendChild(A1);
-                head.appendChild(script);
+                alert("other")
+                // script.appendChild(A1);
+                // head.appendChild(script);
             }
             if (t > 6 && window.screen.availHeight == 640) {
-                script.appendChild(A1);
-                head.appendChild(script);
+                alert("other")
+                // script.appendChild(A1);
+                // head.appendChild(script);
             }
         }
     }, 500)
