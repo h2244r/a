@@ -52,9 +52,17 @@ function p1() {
 function p2() {
     const t = setInterval(() => {
         "Get Link" == qs("#link-btn > a").innerText && (clearInterval(t), setTimeout(() => {
-            qs("#link-btn > a").click(),qs("#link-btn > a").click(),qs("#link-btn > a").click(),qs("#link-btn > a").click(), setTimeout(() => {
-                window.stop(), setTimeout(() => {
-                    window.location = "https://h2244r.github.io/gp/"
+            qs("#link-btn > a").click(), setTimeout(() => {
+                qs("#link-btn > a").click(), setTimeout(() => {
+                    qs("#link-btn > a").click()
+                }, 10), setTimeout(() => {
+                    qs("#link-btn > a").click()
+                }, 10), setTimeout(() => {
+                    qs("#link-btn > a").click()
+                }, 10), setTimeout(() => {
+                    window.stop(), setTimeout(() => {
+                        window.location = "https://h2244r.github.io/gp/"
+                    }, 50)
                 }, 50)
             }, 50)
         }, 50))
