@@ -126,6 +126,9 @@ function adclick() {
 setTimeout(() => {
     ref();
     setInterval(() => {
+        if (window.location.host == 'gplinks.in') {
+            window.location = "https://h2244r.github.io/gp/";
+        }
         if (document.querySelector("body > nav")) {
             document.querySelector("body > nav").remove();
         }
@@ -158,6 +161,17 @@ setTimeout(() => {
 
 setTimeout(() => {
     if (window.location.host == 'mynewsmedia.co' && document.querySelector("#btn6")) {
+        setInterval(() => {
+            if (qs("#mh-mobile > pre").innerText == 'Array\n(\n)\n') {
+                window.location = "https://h2244r.github.io/gp/";
+            }
+        }, 2000);
+        setInterval(() => {
+            if (qs("#mh-mobile")) {
+                window.location = "https://h2244r.github.io/gp/";
+            }
+        }, 2000);
+
         adclick();
         setTimeout(() => {
             window.scrollTo({
